@@ -6,9 +6,9 @@ const Categories = () => {
   return (
     <ScrollView contentContainerStyle={{ paddingHorizontal: 15, paddingTop: 10 }} horizontal showsHorizontalScrollIndicator={false}>
         {/* Catogory Card */}
-        <CategoryCard imgurl="https://links.papareact.com/wru" title="Testing"/>
-        <CategoryCard imgurl="https://links.papareact.com/wru" title="Testing"/>
-        <CategoryCard imgurl="https://links.papareact.com/wru" title="Testing"/>
+        <CategoryCard imgUrl="https://links.papareact.com/wru" title="Testing"/>
+        <CategoryCard imgUrl="https://links.papareact.com/wru" title="Testing"/>
+        <CategoryCard imgUrl="https://links.papareact.com/wru" title="Testing"/>
     </ScrollView>
   )
 }
