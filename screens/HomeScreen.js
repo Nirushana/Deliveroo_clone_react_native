@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native'
 import GlobalStyles from '../GlobalStyles';
 import { AdjustmentsVerticalIcon, ChevronDownIcon, UserIcon, MagnifyingGlassIcon } from "react-native-heroicons/outline";
 import Categories from '../components/Categories';
+import FeaturedRow from '../components/FeaturedRow';
 
 
 const HomeScreen = () => {
@@ -46,7 +47,28 @@ const HomeScreen = () => {
             <ScrollView className='bg-gray-100' contentContainerStyle={{ paddingBottom: 100 }}>
                 {/* Categories Section */}
                 <Categories />
+
                 {/* Featured Section */}
+                <FeaturedRow
+                    id="1"
+                    title="Featured"
+                    description="Paid Placements from our partners"
+
+                />
+
+                <FeaturedRow
+                    id="12"
+                    title="Tasty Discounts"
+                    description="Everyone has been enjoying these juicy discounts!"
+
+                />
+
+                <FeaturedRow
+                    id="123"
+                    title="Offers near you"
+                    description="Why not support your local restaurant to night"
+
+                />
             </ScrollView>
 
         </SafeAreaView>
