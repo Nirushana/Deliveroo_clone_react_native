@@ -10,7 +10,7 @@ const FeaturedRow = ({ id, title, description }) => {
             <Text className="font-bold text-lg">{title}</Text>
             <ArrowRightIcon color="#00CCBB" />
         </View>
-        <Text className="text-xs px-4 text-gray-500">{description}</Text>
+        <Text className="text-l[13.5px] px-4 text-gray-500">{description}</Text>
 
         <ScrollView contentContainerStyle={{ paddingHorizontal: 15, paddingTop: 10 }} horizontal showsHorizontalScrollIndicator={false} className="px-4">
             {/* Restaurant Cards */}
