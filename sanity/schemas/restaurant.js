@@ -1,6 +1,4 @@
-import {defineType} from 'sanity'
-
-export default defineType({
+export default {
   name: 'restaurant',
   title: 'Restaurant',
   type: 'document',
@@ -50,7 +48,21 @@ export default defineType({
       title: "Enter the rating from (1-5 Stars)",
       validation: (Rule) => Rule.required().min(1).max(5).error("Please enter a number between 1 to 5"),
     },
+
+    {
+      name: "type",
+      type: "Category",
+      validation: (Rule) => Rule.required(),
+      type: "reference",
+      to: [{ type: "category" }],
+    },
+
+    {
+      name: "dishes",
+      type: "array",
+      title: "Dishes",
+      of: [{ type: "reference", to: [{ type: "dish" }] }],
+    }
   ],
 
-  
-})
+}
